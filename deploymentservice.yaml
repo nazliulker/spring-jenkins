@@ -15,6 +15,7 @@ spec:
       containers:
       - name: myapp
         image: nazlinesibeulker/devops-integration:latest
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "512Mi"
