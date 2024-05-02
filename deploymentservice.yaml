@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nazlinesibeulker/devops-integration:latest
+        image: ${FROM_IMAGE}
         resources:
           limits:
             memory: "512Mi"
@@ -35,3 +35,10 @@ spec:
   - name: http
     port: 80
     targetPort: 8090
+---
+parameters:
+- name: FROM_IMAGE
+  displayName: Latest Image
+  description: Latest Image
+  value: nazlinesibeulker/devops-integration:latest
+  required: true
