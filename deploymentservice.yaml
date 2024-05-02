@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ${FROM_IMAGE}
+        image: nazlinesibeulker/devops-integration:latest
         resources:
           limits:
             memory: "512Mi"
