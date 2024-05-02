@@ -35,10 +35,4 @@ spec:
   - name: http
     port: 80
     targetPort: 8090
----
-parameters:
-- name: FROM_IMAGE
-  displayName: Latest Image
-  description: Latest Image
-  value: nazlinesibeulker/devops-integration:latest
-  required: true
+
