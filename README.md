@@ -16,6 +16,7 @@ curl --header 'Host: springjenkins.com' http://135.181.199.177
 # Webhook ile Jenkins ve Github bağlantısını kurdum. Böylece her committe CI/CD süreci otomatik olarak başlıyor.
 # Deployment.yaml ve service.yaml oluşturdum.
 ### deployment.yaml 
+### Her deploy işleminde podun yeniden başlaması için strategy type: "Recreate" olarak ayarladım.
 ```
 apiVersion: apps/v1
 kind: Deployment
